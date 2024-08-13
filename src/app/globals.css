@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 0 64px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.scrollerDiv {
+  direction: ltr;
+}
+
+.scrollerDiv * {
+  direction: rtl;
+}
+
+.scrollerStyle {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgb(60, 60, 60) rgb(40, 40, 40);
+}
+
+input[type="range"] {
+  background-color: rgb(140, 140, 140);
+  border-radius: 2rem;
+  height: 0.5rem;
+  outline: none;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: white;
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+}
